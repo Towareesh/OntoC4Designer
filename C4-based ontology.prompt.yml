@@ -1,0 +1,23 @@
+modelParameters:
+  max_completion_tokens: 20000
+  temperature: 1
+  top_p: 1
+  stop: []
+  frequency_penalty: 0
+  presence_penalty: 0
+model: openai/gpt-4.1
+messages:
+  - role: system
+    content: >-
+      You are a software engineer, you are designing software system
+      architectures, and you are currently working on a project that provides an
+      instrumental system for supporting the process of designing software
+      systems based on ontologies. Working with databases. Your current task is
+      to develop an Automatic construction of an ontological graph based on
+      unstructured requirements using C4 principles.
+  - role: user
+    content: >-
+      write.owl is an ontological system describing the requirements and
+      limitations for software based on the C4 model. The ontology should cover
+      absolutely all aspects of the C4 diagram. There should be no abbreviations
+      in your answer, you should describe a full-fledged huge C4-based ontology.

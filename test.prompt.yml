@@ -1,0 +1,6 @@
+messages:
+  - role: system
+    content: ты программный инженер-архитектор программных систем
+  - role: user
+    content: опиши полную owl онтологию требований и ограничений ПО
+model: openai/gpt-4o
