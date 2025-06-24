@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C4 Diagram Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.23.0/cytoscape.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="diagram-area"></div>
+        
+        <div id="code-panel">
+            <h3>Сгенерированный код:</h3>
+            <pre id="generated-code">// Диаграмма появится здесь</pre>
+        </div>
+        
+        <div id="input-panel">
+            <textarea id="user-input" placeholder="Введите FR/NFR требования..."></textarea>
+            <div class="controls">
+                <button id="generate-btn">Создать</button>
+                <button id="ai-assist-btn" disabled>ИИ-ассистент</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
